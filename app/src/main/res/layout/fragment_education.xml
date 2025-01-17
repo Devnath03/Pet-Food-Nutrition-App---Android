@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/Light_black">
+
+    <TextView
+        android:id="@+id/textBox78"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7000dp"
+        android:text="Educational Programs"
+        android:textAlignment="center"
+        android:background="@drawable/doglifes"
+        android:textColor="@color/Light_black" />
+    <!-- Grid Layout for the 2-column box layout with spaces between rows and columns -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openPage1"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <!-- Image Content -->
+            <ImageView
+                android:id="@+id/imageBox12"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="Image for Box 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dog_nutri" />
+
+            <!-- Horizontal Layout for Text and ImageButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Text Content -->
+                <TextView
+                    android:id="@+id/textBox12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Educational Programs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Light_black"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+
+                <!-- Image Button -->
+
+            </LinearLayout>
+        </LinearLayout>
+       <!--Box Item 2-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openPage1"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <!-- Image Content -->
+            <ImageView
+                android:id="@+id/imageBox02"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="Image for Box 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/doggames" />
+
+            <!-- Horizontal Layout for Text and ImageButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Text Content -->
+                <TextView
+                    android:id="@+id/textBox02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Games Programs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Light_black"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+
+<!--                &lt;!&ndash; Image Button &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/buttonImage2"-->
+<!--                    android:layout_width="22dp"-->
+<!--                    android:layout_height="38dp"-->
+<!--                    android:src="@drawable/ic_rightarrow"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Box Item 3-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openPage1"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <!-- Image Content -->
+            <ImageView
+                android:id="@+id/imageBox044"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="Image for Box 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/doglifes" />
+
+            <!-- Horizontal Layout for Text and ImageButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Text Content -->
+                <TextView
+                    android:id="@+id/textBox044"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Dog Life Styles"
+                    android:textAlignment="center"
+                    android:textColor="@color/Light_black"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+
+<!--                &lt;!&ndash; Image Button &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/buttonImage3"-->
+<!--                    android:layout_width="22dp"-->
+<!--                android:layout_height="38dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:src="@drawable/ic_rightarrow"-->
+<!--                android:contentDescription="@string/button_image"-->
+<!--                android:background="?attr/selectableItemBackground"-->
+<!--                android:padding="8dp"-->
+<!--                android:visibility="visible"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Box Item 4-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openPage1"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <!-- Image Content -->
+            <ImageView
+                android:id="@+id/imageBox50"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="Image for Box 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dogbreed" />
+
+            <!-- Horizontal Layout for Text and ImageButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Text Content -->
+                <TextView
+                    android:id="@+id/textBox50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Games Programs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Light_black"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+
+<!--                &lt;!&ndash; Image Button &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/buttonImage4"-->
+<!--                    android:layout_width="22dp"-->
+<!--                    android:layout_height="38dp"-->
+<!--                    android:src="@drawable/ic_rightarrow"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Box Item 5-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openPage1"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <!-- Image Content -->
+            <ImageView
+                android:id="@+id/imageBox30"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="Image for Box 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dogtricks" />
+
+            <!-- Horizontal Layout for Text and ImageButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Text Content -->
+                <TextView
+                    android:id="@+id/textBox30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Games Programs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Light_black"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+
+<!--                &lt;!&ndash; Image Button &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/buttonImage5"-->
+<!--                    android:layout_width="22dp"-->
+<!--                    android:layout_height="38dp"-->
+<!--                    android:src="@drawable/ic_rightarrow"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Box Item 6-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openPage1"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <!-- Image Content -->
+            <ImageView
+                android:id="@+id/imageBox60"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="Image for Box 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dogreceipies" />
+
+            <!-- Horizontal Layout for Text and ImageButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Text Content -->
+                <TextView
+                    android:id="@+id/textBox60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Games Programs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Light_black"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+
+<!--                &lt;!&ndash; Image Button &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/buttonImage6"-->
+<!--                    android:layout_width="22dp"-->
+<!--                    android:layout_height="38dp"-->
+<!--                    android:src="@drawable/ic_rightarrow"/>-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!--        &lt;!&ndash; Box Item 1 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@color/white"-->
+<!--            android:clickable="true"-->
+<!--            android:onClick="openPage1">-->
+
+<!--            &lt;!&ndash; Text Content &ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imageBox12"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:contentDescription="Image for Box 1"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/dog_nutri" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textBox12"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="8dp"-->
+<!--                android:text="Educational Programs"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/Light_black"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="19sp" />-->
+<!--            -->
+<!--        </LinearLayout>-->
+
+    </GridLayout>
+    <ImageButton
+        android:id="@+id/buttonImage1"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="39dp"
+        android:src="@drawable/ic_rightarrow"/>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical" />-->
+<!--    </ScrollView>-->
+</RelativeLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+
+
+
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    &lt;!&ndash; Page Name (top left) &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="118dp"-->
+<!--        android:layout_height="39dp"-->
+<!--        android:text="Education"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintHorizontal_bias="0.241"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.113" />-->
+
+<!--    &lt;!&ndash; Other UI elements for Home Page can be added here &ndash;&gt;-->
+
+<!--</LinearLayout>-->
+
+<!--&lt;!&ndash;<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;</androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->

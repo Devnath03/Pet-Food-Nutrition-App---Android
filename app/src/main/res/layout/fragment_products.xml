@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <!-- Menu Icon -->
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="35dp"
+                android:layout_height="29dp"
+                android:src="@drawable/ic_menu"
+                android:contentDescription="Menu Icon"
+                android:layout_gravity="center_vertical" />
+
+            <!-- Page Title -->
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dog Nutrition Foods  Products"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <!-- Cart Icon -->
+            <ImageView
+                android:id="@+id/cartIcon"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_cartw"
+                android:contentDescription="Cart Icon"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Dashboard Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <!-- Number of Products -->
+            <TextView
+                android:id="@+id/productCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="60 Products"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+            <!-- Sort and Filter Icons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sortIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="39dp"
+                    android:src="@drawable/ic_sortw"
+                    android:contentDescription="Sort Icon"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/sortText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sort"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/filterIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="39dp"
+                    android:src="@drawable/ic_filterw"
+                    android:contentDescription="Filter Icon"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/filterText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="300dp"
+            android:background="@color/Light_black"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/filterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Enter product name or type to filter"/>
+
+            <Button
+                android:id="@+id/filterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_filterw"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!-- Products Section -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:padding="4dp">
+
+            <!-- Sample Product 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <!-- Product Image Circle -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_pol" />
+
+                <!-- Product Name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N-Turf Canned"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <!-- Product Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veterinarian formulated for all breeds of adult dogs"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:paddingTop="4dp" />
+
+                <!-- Product Price -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1200.50"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <!-- Star Ratings -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Sample Product 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_giant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GIANT 20KG"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Containing All Essential Vitamins And Minerals"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.4500.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                    </LinearLayout>
+            </LinearLayout>
+            <!-- Sample Product 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_pro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialized Nutrition"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pro Plan 18 lb Small Breed High Protein "
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.750.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sample Product 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_inova" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dog Inova"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adult Dog Food is nutrient-dense, wholesome nutrition"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.600.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sample Product 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/product_image2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Royal Canin"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialixed Diaper freed for adult dogs"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.500.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sample Product 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_milk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diet Goat Milk Powder"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Febantel 150mg Praziquantel pyrantel Pamo"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.750.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Sample Product 7 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_meat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beef Organic Vegetables"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A single-protein recipe best for intolerances "
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.250.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_hstar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sample Product 8 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_saop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perfect Digestion Salmon"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prebiotics are nutrients that feed"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.200.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_star" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\Our dog loves N-Turf! The quality is top-notch, and it’s been perfect for his coat and overall health."
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Ideal for large breeds! This has been a game-changer for maintaining our dog's energy levels and weight."
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Perfectly tailored for specific dietary needs. This has been essential for keeping our pet healthy."
+            android:textSize="16sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Dog Inova has improved our dog's coat and digestion. Highly recommended for all-round wellness!"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Great balance of nutrition and taste—our pet eagerly waits for mealtime!"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="A wonderful supplement! This milk powder adds essential nutrients and has improved our pet's digestion."
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Nutritious and natural, this mix is perfect for a wholesome meal option."
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Excellent for sensitive stomachs; the salmon flavor is a huge hit with our dog!"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----------------------------------------------------------------------------------------------"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+

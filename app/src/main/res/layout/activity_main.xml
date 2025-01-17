@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@color/Light_black"
+    tools:context=".MainActivity">
+
+    <!-- Back Button -->
+
+    <TextView
+        android:id="@+id/maintitle"
+        android:layout_width="324dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/tiro_devanagari_marathi"
+        android:text="DOG NUTRITION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textDirection="ltr"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <ImageButton
+        android:id="@+id/DogPaw1"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Paw1"
+        android:src="@drawable/dogpaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <ImageButton
+        android:id="@+id/DogPaw2"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Paw1"
+        android:src="@drawable/dogpaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <ImageButton
+        android:id="@+id/DogPaw3"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Paw1"
+        android:src="@drawable/dogpaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <ImageButton
+        android:id="@+id/DogPaw4"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Paw1"
+        android:src="@drawable/dogpaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <ImageButton
+        android:id="@+id/DogPaw5"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Paw1"
+        android:src="@drawable/dogpaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <ImageButton
+        android:id="@+id/DogPaw6"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Paw1"
+        android:src="@drawable/dogpaw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <ImageButton
+        android:id="@+id/RightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/mainrightarrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763"
+        app:srcCompat="@drawable/dogmain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

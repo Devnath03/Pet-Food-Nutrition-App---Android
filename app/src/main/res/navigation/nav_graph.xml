@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mobile_app.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:layout_margin="30dp"
+        android:background="@color/light"
+        />
+
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.example.mobile_app.ProductsFragment"
+        tools:layout="@layout/fragment_products"
+        android:layout_margin="30dp"
+        android:background="@color/light"/>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.mobile_app.CartFragment"
+        tools:layout="@layout/fragment_cart"
+        android:layout_margin="30dp"
+        android:background="@color/light"/>
+
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="com.example.mobile_app.EducationFragment"
+        tools:layout="@layout/fragment_education"
+        android:layout_margin="30dp"
+        android:background="@color/light"/>
+
+</navigation>
+
+
+
+<!--<navigation xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/nav_graph">-->
+
+<!--</navigation>-->

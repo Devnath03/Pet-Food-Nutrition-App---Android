@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Product"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <!-- Product Image Section -->
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:contentDescription="Product Image"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="#FFFFFF"
+        android:padding="8dp" />
+
+    <!-- Product Name -->
+    <EditText
+        android:id="@+id/productNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:padding="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="#757575"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/productPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="#757575"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Product Description -->
+    <EditText
+        android:id="@+id/productDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="#757575"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveProductButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Product"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

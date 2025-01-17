@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="3dp"
+    android:background="@color/Light_black">
+
+    <!-- Top Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/home_back" />
+
+        <!-- Page Title -->
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dogmain" />
+
+        <ImageView
+            android:id="@+id/imageView185"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_registerhere" />
+    </LinearLayout>
+    <!-- Middle Section (Dashboard) -->
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- LinearLayout to stack each content section vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Grid Layout for Navigation Buttons -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/ButtonHE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Healthy Recipes"
+                    android:drawableEnd="@drawable/ic_rightarrow"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="12dp"/>
+
+                <Button
+                    android:id="@+id/ButtonTT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Training Tips"
+                    android:drawableEnd="@drawable/ic_rightarrow"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="12dp"/>
+
+                <Button
+                    android:id="@+id/ButtonHC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Health Checklists"
+                    android:drawableEnd="@drawable/ic_rightarrow"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="12dp"/>
+
+                <Button
+                    android:id="@+id/ButtonCG"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Care Guides"
+                    android:drawableEnd="@drawable/ic_rightarrow"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="12dp"/>
+            </GridLayout>
+
+            <!-- Dog Nutrition Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Understanding Dog Nutrition"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dog_nutrition_image"
+                android:contentDescription="Dog Nutrition"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proper nutrition is vital for your dog’s overall health and well-being. Dogs, like humans, require a balanced diet that includes proteins, carbohydrates, fats, vitamins, and minerals. Proteins are essential for muscle development and tissue repair, while carbohydrates provide energy. Fats are a concentrated source of energy and support healthy skin and coat. Vitamins and minerals play crucial roles in various bodily functions and should be included in your dog’s diet to prevent deficiencies."
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A diet that incorporates high-quality commercial dog food or home-cooked meals tailored to your dog's needs is recommended. Always ensure to consult your veterinarian when making changes to your dog's diet, especially if they have specific health concerns. Remember, the right nutrition can lead to a longer, healthier life for your furry friend."
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingBottom="16dp"/>
+
+            <!-- PDF Download Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downloadable Resources"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dog Nutrition Guide"
+                android:onClick="downloadNutritionGuide"
+                android:drawableEnd="@drawable/ic_rightarrow"
+                android:background="@android:color/holo_green_light"
+                android:padding="16dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Healthy Recipes"
+                android:onClick="downloadHealthyRecipes"
+                android:background="@android:color/holo_green_light"
+                android:padding="16dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Training Tips PDF"
+                android:onClick="downloadTrainingTips"
+                android:background="@android:color/holo_green_light"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+<!--</LinearLayout>-->
+
+    <!-- Bottom Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Example Button -->
+        <Button
+            android:id="@+id/bottomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Action"
+            android:padding="8dp"/>
+    </LinearLayout>
+</LinearLayout>
