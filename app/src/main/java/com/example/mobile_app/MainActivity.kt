@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
             // Show message to view Go Login
-            Toast.makeText(this, "Welcome U To Dog Nutrition ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Welcome U To Dog Nutrition Application  ", Toast.LENGTH_SHORT).show()
 
         }
     }
